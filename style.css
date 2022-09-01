@@ -1,0 +1,55 @@
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    position: relative;
+    max-width: 600px;
+    margin-top: 150px;
+    margin-left: 300px;
+}
+
+.container .project-list,
+.container .project-list-hidden{
+    display: none;
+}
+
+.container .project-list-visible{
+    display: block;
+}
+
+.container .project-list img{
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+}
+
+.container .project-views{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.container .project-views button{
+    border-radius: 50px;
+    border: 2px solid yellow;
+    background-color: red;
+    color: yellow;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+}
+
+.container .project-views button#prev-button{
+    margin-left: 20px;
+}
+
+.container .project-views button#next-button{
+    margin-right: 20px;
+}
